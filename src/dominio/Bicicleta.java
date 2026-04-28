@@ -16,7 +16,7 @@ public class Bicicleta extends Transporte {
 
 	@Override
 	public Boolean registrarPaquete(Destino destino, Paquete paquete) {
-		if (this.getListaDeDestino().contains(destino) && getListaDePaquete().size() <= 2
+		if (this.getListaDeDestino().contains(destino) && getListaDePaquete().size() < 2
 				&& paquete.getPeso() <= limiteDeCarga && paquete.getVolumen() <= limiteDeVolumen ) {
 			return getListaDePaquete().add(paquete);
 		}

@@ -2,14 +2,14 @@ package dominio;
 
 import java.util.Objects;
 
-public class Destino  {
-	
+public class Destino {
+
 	private String nombre;
-	
-	public Destino (String nombre) {
+
+	public Destino(String nombre) {
 		this.nombre = nombre;
 	}
-	
+
 	public String getNombre() {
 		return this.nombre;
 	}
@@ -30,13 +30,5 @@ public class Destino  {
 		Destino other = (Destino) obj;
 		return Objects.equals(nombre, other.nombre);
 	}
-
-//	@Override
-//	public int compareTo(Destino o) {
-//		// TODO Auto-generated method stub
-//		return getNombre().compareTo(o.getNombre());
-//	}
-	
-	
 
 }
